@@ -49,9 +49,7 @@ const sellOrder = async (orderBody) => {
         tradeEnvironmentId: tradeEnvironmentId || null,
         "attributeIdsCsv": orderBody.attributeIdsCsv
       },
-      "accountSecretDetails": [
-        accountSecretDetails
-      ]
+      accountSecretDetails
     }
     if (mainOfferImage) {
       sellOrderBody.details.mainOfferImage = mainOfferImage
